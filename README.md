@@ -1,2 +1,3 @@
 # haskell-tpb-itb
-kumpulan tugas haskell itb
+
+kumpulan tugas haskell itb (tugas edunex)
