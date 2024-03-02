@@ -1,6 +1,6 @@
 # haskell-tpb-itb
 
-kumpulan tugas haskell itb (tugas edunex)
+kumpulan tugas haskell ITB (tugas edunex) tahun ajaran 2023/2024
 
 ## how to compile haskell
 
