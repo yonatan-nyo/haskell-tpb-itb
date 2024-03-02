@@ -31,7 +31,7 @@ nilaiTengah :: Int -> Int -> Int -> Int
 
 -- REALISASI
 nilaiTengah a b c
-  | (a /= max3 a b c && a /= min3 a b c) = a
-  | (b /= max3 a b c && b /= min3 a b c) = b
+  | a /= max3 a b c && a /= min3 a b c = a
+  | b /= max3 a b c && b /= min3 a b c = b
   | otherwise = c
 
