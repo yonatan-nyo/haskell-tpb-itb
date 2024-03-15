@@ -31,7 +31,6 @@ reducedList li n
 generateI3 :: [Int]-> [Int]-> [Int]
 generateI3 l1 l2
   | null l1 && null l2 = []
-  | null l1 = l2
   | null l2 = l1
   | otherwise =  [head l1, head l2] ++ generateI3 (tail l1) (tail l2)
 
@@ -40,6 +39,6 @@ alternateSort li = l3 where
   sortedLi = sortList li minList
   halfLength = length li `div` 2 + length li `mod` 2
   halfLength2 = length li `div` 2
-  l1 = sortList (generateList sortedLi halfLength) minList
-  l2 = sortList (generateList (reducedList sortedLi halfLength) halfLength2) maxList
+  l1 = generateList sortedLi halfLength -- gausah sort karena udah kecil ke besar
+  l2 = reverse (reducedList sortedLi halfLength) -- reverse supaya kecil ke besar -> besar ke kecil
   l3 = generateI3 l1 l2
